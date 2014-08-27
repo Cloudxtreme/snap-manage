@@ -91,23 +91,23 @@ and make sure its executable:
 
 To run the scripts from the command line make sure you have /usr/sbin in your $PATH
 
-For help
+*For help*
 
 	snap-manage -h
 
-Example of a daily backup that clears after 14 days
+*Example of a daily backup that clears after 14 days*
 
 	snap-manage -a 624900703163 -s Daily -v 14
 
-Same example but in a different region to eu-west-1
+*Same example but in a different region to eu-west-1*
 
 	snap-manage -a 624900703163 -r us-west-1 -s Daily -v 14
 
-Monthly snapshot example
+*Monthly snapshot example*
 
 	snap-manage -a 624900703163 -s Monthly -v 90
 
-Cron
+**Cron**
 
 Example cron to run monthly and daily backups from /etc/cron.d/snapshots
 
